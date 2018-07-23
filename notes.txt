@@ -1,0 +1,9 @@
+Lets start Apache Kafka. As we had explained in detail in the Getting started with Apache Kafka (https://kafka.apache.org/downloads)
+and download the https://kafka.apache.org/download the Scala 2.12 kafka_2.12-0.10.2.1.tgz
+AND perform the following.
+Start Apache Zookeper-
+C:\kafka_2.12-0.10.2.1>.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+
+Start Apache Kafka-
+C:\kafka_2.12-0.10.2.1>.\bin\windows\kafka-server-start.bat .\config\server.properties
