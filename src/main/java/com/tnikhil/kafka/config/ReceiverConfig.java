@@ -19,8 +19,8 @@ import java.util.Map;
  * @author Nikhil.Tirmanwar
  *
  */
-@EnableKafka
 @Configuration
+@EnableKafka
 public class ReceiverConfig {
 
     @Value("${spring.kafka.bootstrap-servers}")

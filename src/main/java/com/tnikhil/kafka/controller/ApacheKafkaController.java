@@ -11,13 +11,13 @@ import com.tnikhil.kafka.producer.Sender;
  * @author Nikhil.Tirmanwar
  *
  */
-@RestController("/kafka/")
+@RestController
 public class ApacheKafkaController {
 
 	@Autowired
 	Sender sender;
 
-	@GetMapping("{message}")
+	@GetMapping("/{message}")
 	public void testMe(@PathVariable("message") String message) {
 
 		sender.send(message);
