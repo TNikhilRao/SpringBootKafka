@@ -21,7 +21,7 @@ public class Receiver {
 	
 	public CountDownLatch countDownLatch0 = new CountDownLatch(3);
 
-	@KafkaListener(id = "id0", topicPartitions = { @TopicPartition(topic = "mytest-topic", partitions = { "0" }) })
+	@KafkaListener(id = "id0", topicPartitions = { @TopicPartition(topic = "${app.topic.foo}", partitions = { "0" }) })
 	//@KafkaListener(topics = "${app.topic.foo}")
 	public void listen(@Payload String message) { //ConsumerRecord<?, ?> record ) {
 		LOG.info("received message='{}'", message);
